@@ -1,185 +1,100 @@
-# 🛠️ Project: Python Website Blocker
-   ![](https://komarev.com/ghpvc/?username=mscbuild) 
- ![](https://img.shields.io/github/license/mscbuild/e-learning) 
- ![](https://img.shields.io/github/repo-size/mscbuild/e-learning)
-![](https://img.shields.io/badge/PRs-Welcome-green)
-![](https://img.shields.io/badge/code%20style-python-green)
-![](https://img.shields.io/github/stars/mscbuild)
-![](https://img.shields.io/badge/Topic-Github-lighred)
-![](https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2Fmscbuild)
+# Web Blocker 🤖
 
+![GitHub release](https://img.shields.io/github/release/infinitemographs/web_blocker.svg)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-# 📌 What It Does
+Welcome to **Web Blocker**, a simple yet effective Python tool designed to help you block annoying websites. With this software, you can focus on your work without distractions. 
 
-Blocks specified websites during working hours by editing the system's  `hosts` file.
+## Table of Contents
 
-# 📁 Files and Structure
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Release Information](#release-information)
 
-You only need one main Python file:
+## Introduction
 
-~~~bash
-website_blocker.py
-~~~
+In today's digital age, distractions are everywhere. Websites can pull your attention away from important tasks. **Web Blocker** allows you to take control of your browsing experience by blocking unwanted sites. Whether you're a developer, a student, or just someone looking to improve focus, this tool can help.
 
-# 🧰 Requirements
+## Features
 
-- Python 3.x
+- **Simple Interface**: Easy to set up and use.
+- **Customizable**: Add or remove websites from the block list.
+- **Python-Based**: Built using Python for flexibility and ease of modification.
+- **Lightweight**: Minimal system resource usage.
+- **Security**: Helps prevent distractions that can lead to security risks.
 
-- Admin/root privileges (to modify the `hosts` file)
+## Installation
 
-# 🧠 How It Works
+To install **Web Blocker**, follow these steps:
 
-- Modifies the hosts file on your system.
+1. Ensure you have Python 3.8 or higher installed on your machine. You can download it from the [official Python website](https://www.python.org/downloads/).
+   
+2. Clone this repository to your local machine:
 
-- Redirects websites to 127.0.0.1, essentially blocking them.
+   ```bash
+   git clone https://github.com/infinitemographs/web_blocker.git
+   ```
 
-- Unblocks them after working hours.
+3. Navigate to the project directory:
 
-# ⚙️ Location of hosts File
+   ```bash
+   cd web_blocker
+   ```
 
-- Windows: `C:\Windows\System32\drivers\etc\hosts`
+4. Install the required dependencies:
 
-- Linux/Mac: `/etc/hosts`
+   ```bash
+   pip install -r requirements.txt
+   ```
 
- # 🧾 Sample Code
+## Usage
 
- ~~~bash
-website_blocker.py
-~~~
+To start using **Web Blocker**, follow these steps:
 
-# ⚠️ Note
+1. Open the terminal and navigate to the project directory.
+2. Run the script:
 
-- Run as Admin/root: You’ll need to run the script with administrative privileges.
+   ```bash
+   python web_blocker.py
+   ```
 
-- Schedule It: Use Task Scheduler (Windows) or `cron` (Linux/macOS) to run it in the background.
+3. Follow the on-screen instructions to add websites to your block list.
 
- # ✅ Possible Upgrades
- 
-- GUI using `tkinter` or `PyQt`
+For detailed instructions, please refer to the documentation within the repository.
 
-- Add/Remove websites dynamically
+## Contributing
 
-- Block based on categories (social, entertainment)
+We welcome contributions! If you would like to contribute to **Web Blocker**, please follow these steps:
 
-- Notifications or logging
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your forked repository.
+5. Create a pull request.
 
-# 🎨 Python Website Blocker with GUI (tkinter)
-  
-✅ Fe
- 
-- GUI to
+## License
 
-- S
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-- View
+## Contact
 
-- Ru
+For any inquiries or suggestions, feel free to reach out:
 
-# 📁 File: `website_blocker_gui.py`
+- **Email**: your_email@example.com
+- **GitHub**: [infinitemographs](https://github.com/infinitemographs)
 
-# ⚙️ How to Run
+## Release Information
 
-- Run with admin/root permissions.
+You can download the latest release of **Web Blocker** from the [Releases section](https://github.com/infinitemographs/web_blocker/releases). 
 
-- Run the script:
+Make sure to download the appropriate file and execute it on your system. This will ensure you have the latest features and fixes.
 
-~~~bash
-python website_blocker_gui.py
-~~~
-- Add websites, and click Start Blocking.
+---
 
-# 🧠 Optional Enhancements
-
-- Save/load blocked websites list to file
-
-- Customize working hours in GUI
-
-- Tray icon or minimize-to-tray
-
-Auto-start on system boot
-
-# 🛠️ Steps to Convert to a macOS App
-
-**Step 1: Install PyInstaller**
-
-First, you'll need to install PyInstaller to
-~~~bash
-pip install pyinstaller
-~~~
-**Step 2: Create**
-
-- Navigate to the directory where y
-
-- Run the following command to create a standalone app (this will generate a `.app` fi)
-
-  ~~~bash
-  pyinstaller --onefile --windowed website_blocker_gui.py
-  ~~~
-- `--onefile`: Pa
-
-- `--windowed`: Preve
-
-This will generate a `dist` folder cwebsite_blocker_.
-
- ***Step 3:***
- 
-Once PyInstaller finishes, you should see a .app file in the `dist directoryWebsite GUI jus
-
-***Step 4:***
-
-- If yo
-
-- Creat (if you)
-
-- Open Keychain A andDevelo certi
-
-- Use t
-  ~~~bash
-  codesign --sign "Developer ID Application: Your Name (Team ID)" path/to/website_blocker_gui.app
-  ~~~
-
-  ***Step 5:***
-  
-If you want to create a downloadable disk image for distribution, you can package the `.app` file `.dmg` file for
-
-- Install `create-dmg`:
-~~~bash
-npm install -g create-dmg
-~~~
-- Run th
-~~~bash
-create-dmg "dist/website_blocker_gui.app" "dist/website_blocker_gui.dmg"
-~~~
-
-This will generate a `.dmg` file, w
-
-# 🎉 Y
-
-Now you have a standalone macO that runs yo
-
-# Notifications
-
-
-> [!NOTE]
-> If you use an app-level blocker, make sure it is protected from abuse..
-
-> [!TIP]
-> Blocking websites may not always be effective, and users can bypass blocking. It is just one tool for increasing security and control.
-
-> [!IMPORTANT]
-> A real application would require more complex mechanisms for processing requests, filtering, storing a list of blocked sites, etc.
-
-> [!WARNING]
-> Warning: Site blockers may conflict with other network and browser settings. Please note potential issues and possible alternative solutions.
-
-
-# 📜 License
-
-MIT License © 2025 
-
-
-
-
-
-
- 
+Thank you for checking out **Web Blocker**! We hope it helps you stay focused and productive. If you have any questions or feedback, please reach out through the contact information provided. Happy blocking!
